@@ -1,6 +1,12 @@
-name: helloworld # 这是你的插件的唯一识别名。
-desc: 这是 AstrBot 的默认插件，支持关键词回复。 # 插件简短描述
-help: 输入 /keyword 查看关键词回复帮助。 # 插件的帮助信息
-version: v1.3 # 插件版本号。格式：v1.1.1 或者 v1.1
-author: Soulter # 作者
-repo: https://github.com/Soulter/helloworld # 插件的仓库地址
+name: olaqi_search
+desc: 位置查询插件，支持查询附近的美食、酒店、位置等信息，并使用 LLM 进行总结输出
+help: |-  # 帮助信息（支持多行）
+  位置查询插件使用说明：
+    - 使用 /so <搜索内容> 查询附近的某个地点。
+    - 使用 /go <起点> 查询固定的定位位置到指定位置的距离和预计时间。
+    - 使用 /go <起点> to <终点> 查询两个位置之间的距离和预计时间。
+    - 使用 /dd <起点> 查询固定的定位位置到指定位置的路况信息。
+    - 使用 /dd <起点> to <终点> 查询两个位置之间的路况信息。
+version: v1.0.0
+author: OLAQI
+repo: https://github.com/OLAQI/olaqi_search
