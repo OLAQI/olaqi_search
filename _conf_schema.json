@@ -1,0 +1,27 @@
+{
+    "mode": {
+        "type": "string",
+        "description": "总结模式",
+        "options": ["auto", "daily"],
+        "default": "auto",
+        "hint": "auto-消息达阈值自动触发 | daily-每日定时总结"
+    },
+    "threshold": {
+        "type": "int",
+        "description": "触发阈值",
+        "default": 50,
+        "hint": "消息量达到该值时生成总结"
+    },
+    "style": {
+        "type": "string",
+        "description": "总结风格",
+        "default": "简明扼要",
+        "options": ["简明扼要", "幽默风趣", "专业报告"]
+    },
+    "time": {
+        "type": "string",
+        "description": "定时时间",
+        "default": "23:30",
+        "hint": "仅在daily模式下生效(HH:mm格式)"
+    }
+}
