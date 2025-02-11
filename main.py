@@ -11,7 +11,7 @@ from astrbot.api.all import Plain, MessageChain  # 从 astrbot.api.all 导入 Pl
 
 logger = logging.getLogger("astrbot")
 
-@register("olaqi_search", "OLAQI", "位置查询插件", "1.0.0", "https://github.com/OLAQI/olaqi_search")
+@register("Location_Queries", "OLAQI", "位置查询插件", "1.0.0", "https://github.com/OLAQI/astrbot_plugin_location_queries")
 class LocationQueriesPlugin(Star):
     def __init__(self, context: Context, config: dict):
         super().__init__(context)
