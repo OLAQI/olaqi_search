@@ -1,15 +1,23 @@
 {
   "amap_api_key": {
-    "description": "高德开放平台 Key",
     "type": "string",
+    "description": "高德地图 Web 服务 API Key",
     "hint": "请在高德开放平台申请 Web 服务 API 类型的 Key",
-    "obvious_hint": true,
+     "obvious_hint": true,
     "default": ""
   },
   "fixed_location": {
-    "description": "固定的定位位置",
-    "type": "string",
-    "hint": "设置一个详细的地址作为固定的定位位置",
-    "default": ""
+    "type": "object",
+    "description": "固定位置",
+    "properties": {
+      "location": {
+        "type": "string",
+        "description": "经纬度坐标 (例如：116.397428,39.90923)"
+      },
+      "name": {
+          "type": "string",
+          "description": "位置名称"
+      }
+    }
   }
 }
