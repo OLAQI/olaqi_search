@@ -8,7 +8,7 @@ from astrbot.api.event.filter import command
 
 logger = logging.getLogger("astrbot")
 
-@register("olaqi_search", "OLAQI", "高德地图周边搜索插件", "1.0.0", "https://github.com/OLAQI/olaqi_search")
+@register("olaqi_search", "OLAQI", "高德地图周边搜索插件", "1.0.1", "https://github.com/OLAQI/olaqi_search")
 class GaodePOIPlugin(Star):
     def __init__(self, context: Context, config: Dict[str, Any]):
         super().__init__(context)
